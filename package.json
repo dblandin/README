@@ -16,7 +16,11 @@
     "precommit": "yarn setup-structure; yarn sort-tech-radar-data; lint-staged",
     "prepush": "yarn danger local",
     "setup-structure": "ts-node --skip-project scripts/create-readmes.ts; git add .",
-    "sort-tech-radar-data": "ts-node scripts/sort-tech-radar-data.ts; git add ."
+    "sort-tech-radar-data": "ts-node scripts/sort-tech-radar-data.ts; git add .",
+    "serve": "gatsby serve",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "clean": "gatsby clean"
   },
   "lint-staged": {
     "*.{ts,json,md}": [
@@ -31,5 +35,14 @@
     "bracketSpacing": true,
     "proseWrap": "always"
   },
-  "license": "CC-BY-4.0"
+  "license": "CC-BY-4.0",
+  "dependencies": {
+    "@artsy/palette": "^5.1.6",
+    "gatsby": "^2.18.3",
+    "gatsby-source-filesystem": "^2.1.38",
+    "gatsby-transformer-remark": "^2.6.37",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "styled-components": "^4.4.1"
+  }
 }
